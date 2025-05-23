@@ -1,4 +1,3 @@
-
 package model;
 
 public class Candidate {
@@ -17,7 +16,12 @@ public class Candidate {
     }
 
     public String uniqueId() {
-        return this.unitPerno;
+        return this.sailPerno; // Use sailPerno as the unique key
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Candidate[unitCd=%s, sailPerno=%s, unitPerno=%s, yyyymm=%s, name=%s]", unitCd, sailPerno, unitPerno, yyyymm, name);
     }
 
     @Override
