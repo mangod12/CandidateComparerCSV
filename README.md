@@ -92,6 +92,9 @@ java Main
 Modify `Main.java` to set your file paths and comparison parameters:
 
 ```java
+import java.util.Arrays;
+import java.util.List;
+
 String masterPath = "path/to/master.csv";
 String changesPath = "path/to/changes.csv";
 String keyColumn = "ID";
@@ -149,11 +152,9 @@ ID,Name,Department,YYYYMM
 
 **Summary** (`count.csv`):
 ```csv
-Column,Change Count
+column,count
 Department,1
 YYYYMM,2
-Total Changes,3
-New Entries,1
 ```
 
 ## 🎨 GUI Features
