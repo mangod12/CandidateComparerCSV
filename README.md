@@ -95,7 +95,7 @@ Modify `Main.java` to set your file paths and comparison parameters:
 String masterPath = "path/to/master.csv";
 String changesPath = "path/to/changes.csv";
 String keyColumn = "ID";
-List<String> columnsToIgnore = List.of("YYYYMM", "LastModified");
+List<String> columnsToIgnore = Arrays.asList("YYYYMM", "LastModified");
 ```
 
 Then run:
